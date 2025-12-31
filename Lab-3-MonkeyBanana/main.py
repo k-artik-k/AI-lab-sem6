@@ -143,7 +143,7 @@ while True:
     if has_banana and monkey.colliderect(door):
     # Display message
        screen.fill((0, 0, 0))  # black background
-       message = FONT.render("🎉 Monkey got the banana! Game Ends!", True, (255, 255, 0))
+       message = FONT.render("Monkey got the banana! Game Ends!", True, (255, 255, 0))
        screen.blit(message, (WIDTH//2 - message.get_width()//2, HEIGHT//2 - message.get_height()//2))
        pygame.display.update()
        pygame.time.wait(2000)  # wait 2 seconds
